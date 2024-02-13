@@ -1,0 +1,4 @@
+.env
+scripts/
+tests/alter_table.py
+__pycache__/
