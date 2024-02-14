@@ -52,7 +52,7 @@ dag = DAG(
     'postgres_to_redshift_etl',
     default_args=default_args,
     description='ETL job to transfer data from PostgreSQL to Redshift',
-    schedule_interval=timedlta(hours=1)
+    schedule_interval=timedelta(hours=1)
 )
 
 etl_task = PythonOperator(
